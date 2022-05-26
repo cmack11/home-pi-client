@@ -1,6 +1,7 @@
 import { createBoard, playMove } from "./connect4.js";
 
 function getWebSocketServer() {
+  console.log('ccm','here')
   if (true || window.location.host === "localhost:8000") {
     return "ws://0.0.0.0:8001/";
   } else if (true || window.location.host === "aaugustin.github.io") {
